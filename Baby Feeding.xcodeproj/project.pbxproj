@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C94B8AB921022CD4009B86B3 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94B8AB821022CD4009B86B3 /* AddRecordViewController.swift */; };
+		C95FB25621034AE1005BF70B /* FeedDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95FB25521034AE1005BF70B /* FeedDataCenter.swift */; };
+		C95FB2592104D972005BF70B /* EditRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95FB2582104D971005BF70B /* EditRecordViewController.swift */; };
+		C9AE8E6B2102FCC100F9A43E /* RecordHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE8E6A2102FCC100F9A43E /* RecordHistoryViewController.swift */; };
+		C9C465BB2100CD8500DB346C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C465BA2100CD8500DB346C /* AppDelegate.swift */; };
+		C9C465C22100CD8500DB346C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C465C02100CD8500DB346C /* Main.storyboard */; };
+		C9C465C42100CD8500DB346C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C465C32100CD8500DB346C /* Assets.xcassets */; };
+		C9C465C72100CD8500DB346C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C465C52100CD8500DB346C /* LaunchScreen.storyboard */; };
+		C9C465D22100CD8600DB346C /* Baby_FeedingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C465D12100CD8600DB346C /* Baby_FeedingTests.swift */; };
+		C9C465DD2100CD8600DB346C /* Baby_FeedingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C465DC2100CD8600DB346C /* Baby_FeedingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9C465CE2100CD8600DB346C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C465AF2100CD8500DB346C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C465B62100CD8500DB346C;
+			remoteInfo = "Baby Feeding";
+		};
+		C9C465D92100CD8600DB346C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C465AF2100CD8500DB346C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C465B62100CD8500DB346C;
+			remoteInfo = "Baby Feeding";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C94B8AB821022CD4009B86B3 /* AddRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
+		C95FB25521034AE1005BF70B /* FeedDataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDataCenter.swift; sourceTree = "<group>"; };
+		C95FB25721048081005BF70B /* Baby Feeding.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Baby Feeding.entitlements"; sourceTree = "<group>"; };
+		C95FB2582104D971005BF70B /* EditRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditRecordViewController.swift; sourceTree = "<group>"; };
+		C9AE8E6A2102FCC100F9A43E /* RecordHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordHistoryViewController.swift; sourceTree = "<group>"; };
+		C9C465B72100CD8500DB346C /* Baby Feeding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Feeding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C465BA2100CD8500DB346C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9C465C12100CD8500DB346C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9C465C32100CD8500DB346C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9C465C62100CD8500DB346C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9C465C82100CD8500DB346C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C465CD2100CD8600DB346C /* Baby FeedingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baby FeedingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C465D12100CD8600DB346C /* Baby_FeedingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_FeedingTests.swift; sourceTree = "<group>"; };
+		C9C465D32100CD8600DB346C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C465D82100CD8600DB346C /* Baby FeedingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baby FeedingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C465DC2100CD8600DB346C /* Baby_FeedingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_FeedingUITests.swift; sourceTree = "<group>"; };
+		C9C465DE2100CD8600DB346C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9C465B42100CD8500DB346C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C465CA2100CD8600DB346C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C465D52100CD8600DB346C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9C465AE2100CD8500DB346C = {
+			isa = PBXGroup;
+			children = (
+				C9C465B92100CD8500DB346C /* Baby Feeding */,
+				C9C465D02100CD8600DB346C /* Baby FeedingTests */,
+				C9C465DB2100CD8600DB346C /* Baby FeedingUITests */,
+				C9C465B82100CD8500DB346C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9C465B82100CD8500DB346C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C465B72100CD8500DB346C /* Baby Feeding.app */,
+				C9C465CD2100CD8600DB346C /* Baby FeedingTests.xctest */,
+				C9C465D82100CD8600DB346C /* Baby FeedingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9C465B92100CD8500DB346C /* Baby Feeding */ = {
+			isa = PBXGroup;
+			children = (
+				C95FB25721048081005BF70B /* Baby Feeding.entitlements */,
+				C9C465BA2100CD8500DB346C /* AppDelegate.swift */,
+				C9C465C02100CD8500DB346C /* Main.storyboard */,
+				C9C465C32100CD8500DB346C /* Assets.xcassets */,
+				C9C465C52100CD8500DB346C /* LaunchScreen.storyboard */,
+				C9C465C82100CD8500DB346C /* Info.plist */,
+				C94B8AB821022CD4009B86B3 /* AddRecordViewController.swift */,
+				C95FB2582104D971005BF70B /* EditRecordViewController.swift */,
+				C9AE8E6A2102FCC100F9A43E /* RecordHistoryViewController.swift */,
+				C95FB25521034AE1005BF70B /* FeedDataCenter.swift */,
+			);
+			path = "Baby Feeding";
+			sourceTree = "<group>";
+		};
+		C9C465D02100CD8600DB346C /* Baby FeedingTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C465D12100CD8600DB346C /* Baby_FeedingTests.swift */,
+				C9C465D32100CD8600DB346C /* Info.plist */,
+			);
+			path = "Baby FeedingTests";
+			sourceTree = "<group>";
+		};
+		C9C465DB2100CD8600DB346C /* Baby FeedingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C465DC2100CD8600DB346C /* Baby_FeedingUITests.swift */,
+				C9C465DE2100CD8600DB346C /* Info.plist */,
+			);
+			path = "Baby FeedingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9C465B62100CD8500DB346C /* Baby Feeding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C465E12100CD8600DB346C /* Build configuration list for PBXNativeTarget "Baby Feeding" */;
+			buildPhases = (
+				C9C465B32100CD8500DB346C /* Sources */,
+				C9C465B42100CD8500DB346C /* Frameworks */,
+				C9C465B52100CD8500DB346C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Baby Feeding";
+			productName = "Baby Feeding";
+			productReference = C9C465B72100CD8500DB346C /* Baby Feeding.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9C465CC2100CD8600DB346C /* Baby FeedingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C465E42100CD8600DB346C /* Build configuration list for PBXNativeTarget "Baby FeedingTests" */;
+			buildPhases = (
+				C9C465C92100CD8600DB346C /* Sources */,
+				C9C465CA2100CD8600DB346C /* Frameworks */,
+				C9C465CB2100CD8600DB346C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C465CF2100CD8600DB346C /* PBXTargetDependency */,
+			);
+			name = "Baby FeedingTests";
+			productName = "Baby FeedingTests";
+			productReference = C9C465CD2100CD8600DB346C /* Baby FeedingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9C465D72100CD8600DB346C /* Baby FeedingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C465E72100CD8600DB346C /* Build configuration list for PBXNativeTarget "Baby FeedingUITests" */;
+			buildPhases = (
+				C9C465D42100CD8600DB346C /* Sources */,
+				C9C465D52100CD8600DB346C /* Frameworks */,
+				C9C465D62100CD8600DB346C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C465DA2100CD8600DB346C /* PBXTargetDependency */,
+			);
+			name = "Baby FeedingUITests";
+			productName = "Baby FeedingUITests";
+			productReference = C9C465D82100CD8600DB346C /* Baby FeedingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9C465AF2100CD8500DB346C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ArthasFu;
+				TargetAttributes = {
+					C9C465B62100CD8500DB346C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = V64G829AMZ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
+					};
+					C9C465CC2100CD8600DB346C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = V64G829AMZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C9C465B62100CD8500DB346C;
+					};
+					C9C465D72100CD8600DB346C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = V64G829AMZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C9C465B62100CD8500DB346C;
+					};
+				};
+			};
+			buildConfigurationList = C9C465B22100CD8500DB346C /* Build configuration list for PBXProject "Baby Feeding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9C465AE2100CD8500DB346C;
+			productRefGroup = C9C465B82100CD8500DB346C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9C465B62100CD8500DB346C /* Baby Feeding */,
+				C9C465CC2100CD8600DB346C /* Baby FeedingTests */,
+				C9C465D72100CD8600DB346C /* Baby FeedingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9C465B52100CD8500DB346C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C465C72100CD8500DB346C /* LaunchScreen.storyboard in Resources */,
+				C9C465C42100CD8500DB346C /* Assets.xcassets in Resources */,
+				C9C465C22100CD8500DB346C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C465CB2100CD8600DB346C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C465D62100CD8600DB346C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9C465B32100CD8500DB346C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AE8E6B2102FCC100F9A43E /* RecordHistoryViewController.swift in Sources */,
+				C9C465BB2100CD8500DB346C /* AppDelegate.swift in Sources */,
+				C95FB2592104D972005BF70B /* EditRecordViewController.swift in Sources */,
+				C95FB25621034AE1005BF70B /* FeedDataCenter.swift in Sources */,
+				C94B8AB921022CD4009B86B3 /* AddRecordViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C465C92100CD8600DB346C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C465D22100CD8600DB346C /* Baby_FeedingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C465D42100CD8600DB346C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C465DD2100CD8600DB346C /* Baby_FeedingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9C465CF2100CD8600DB346C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C465B62100CD8500DB346C /* Baby Feeding */;
+			targetProxy = C9C465CE2100CD8600DB346C /* PBXContainerItemProxy */;
+		};
+		C9C465DA2100CD8600DB346C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C465B62100CD8500DB346C /* Baby Feeding */;
+			targetProxy = C9C465D92100CD8600DB346C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9C465C02100CD8500DB346C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C465C12100CD8500DB346C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9C465C52100CD8500DB346C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C465C62100CD8500DB346C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9C465DF2100CD8600DB346C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9C465E02100CD8600DB346C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9C465E22100CD8600DB346C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Baby Feeding/Baby Feeding.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = V64G829AMZ;
+				INFOPLIST_FILE = "Baby Feeding/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArthasFu.Baby-Feeding";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C9C465E32100CD8600DB346C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Baby Feeding/Baby Feeding.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = V64G829AMZ;
+				INFOPLIST_FILE = "Baby Feeding/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArthasFu.Baby-Feeding";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C9C465E52100CD8600DB346C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V64G829AMZ;
+				INFOPLIST_FILE = "Baby FeedingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArthasFu.Baby-FeedingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baby Feeding.app/Baby Feeding";
+			};
+			name = Debug;
+		};
+		C9C465E62100CD8600DB346C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V64G829AMZ;
+				INFOPLIST_FILE = "Baby FeedingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArthasFu.Baby-FeedingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baby Feeding.app/Baby Feeding";
+			};
+			name = Release;
+		};
+		C9C465E82100CD8600DB346C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V64G829AMZ;
+				INFOPLIST_FILE = "Baby FeedingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArthasFu.Baby-FeedingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Baby Feeding";
+			};
+			name = Debug;
+		};
+		C9C465E92100CD8600DB346C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V64G829AMZ;
+				INFOPLIST_FILE = "Baby FeedingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArthasFu.Baby-FeedingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Baby Feeding";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9C465B22100CD8500DB346C /* Build configuration list for PBXProject "Baby Feeding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C465DF2100CD8600DB346C /* Debug */,
+				C9C465E02100CD8600DB346C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C465E12100CD8600DB346C /* Build configuration list for PBXNativeTarget "Baby Feeding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C465E22100CD8600DB346C /* Debug */,
+				C9C465E32100CD8600DB346C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C465E42100CD8600DB346C /* Build configuration list for PBXNativeTarget "Baby FeedingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C465E52100CD8600DB346C /* Debug */,
+				C9C465E62100CD8600DB346C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C465E72100CD8600DB346C /* Build configuration list for PBXNativeTarget "Baby FeedingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C465E82100CD8600DB346C /* Debug */,
+				C9C465E92100CD8600DB346C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9C465AF2100CD8500DB346C /* Project object */;
+}
