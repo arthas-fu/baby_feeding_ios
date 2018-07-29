@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,44 +15,46 @@
             <objects>
                 <viewController title="Add Record" id="9pv-A4-QxB" customClass="AddRecordViewController" customModule="Baby_Feeding" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                        <viewControllerLayoutGuide type="top" id="JDq-eu-k9J"/>
+                        <viewControllerLayoutGuide type="bottom" id="T4f-7l-ydw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jw1-sW-df7">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jw1-sW-df7">
                                 <rect key="frame" x="0.0" y="259" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="553709212.84386206">
                                     <!--2018-07-19 16:06:52 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="时间" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dha-hD-kBc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dha-hD-kBc">
                                 <rect key="frame" x="0.0" y="196" width="375" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="UkN-jV-eHe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="奶量(ml)" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMr-lq-7af">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奶量(ml)" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMr-lq-7af">
                                 <rect key="frame" x="29" y="109" width="124" height="40"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="LcC-BJ-IAh"/>
+                                    <constraint firstAttribute="height" constant="40" id="iRd-Ku-Iyr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a2U-uE-7xk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="输入奶量" textAlignment="center" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a2U-uE-7xk">
                                 <rect key="frame" x="161" y="109" width="184" height="40"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <navigationBar opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzm-qR-ms8">
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzm-qR-ms8">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <navigationItem title="添加记录" id="IVa-Zj-pOG">
@@ -63,9 +66,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fY1-HP-wQZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fY1-HP-wQZ">
                                 <rect key="frame" x="131" y="517" width="112" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="8YM-A0-23a"/>
+                                    <constraint firstAttribute="width" constant="112" id="Dz1-P1-rjU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="添加"/>
                                 <connections>
@@ -74,8 +80,30 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kzm-qR-ms8" firstAttribute="top" secondItem="JDq-eu-k9J" secondAttribute="bottom" id="0Fg-7u-X2b"/>
+                            <constraint firstItem="dha-hD-kBc" firstAttribute="leading" secondItem="jw1-sW-df7" secondAttribute="leading" id="6pC-r4-sFh"/>
+                            <constraint firstItem="NMr-lq-7af" firstAttribute="top" secondItem="a2U-uE-7xk" secondAttribute="top" id="8xY-gj-kEd"/>
+                            <constraint firstItem="jw1-sW-df7" firstAttribute="centerX" secondItem="fY1-HP-wQZ" secondAttribute="centerX" id="DOE-pD-mcg"/>
+                            <constraint firstItem="dha-hD-kBc" firstAttribute="top" secondItem="NMr-lq-7af" secondAttribute="bottom" constant="47" id="DYn-Wl-Rth"/>
+                            <constraint firstItem="NMr-lq-7af" firstAttribute="bottom" secondItem="a2U-uE-7xk" secondAttribute="bottom" id="EtH-co-qef"/>
+                            <constraint firstItem="kzm-qR-ms8" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="KCF-fz-6ur"/>
+                            <constraint firstItem="NMr-lq-7af" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="13" id="MLf-mL-slJ"/>
+                            <constraint firstItem="dha-hD-kBc" firstAttribute="trailing" secondItem="jw1-sW-df7" secondAttribute="trailing" id="Ryc-MZ-7gy"/>
+                            <constraint firstAttribute="trailing" secondItem="kzm-qR-ms8" secondAttribute="trailing" id="a1M-PD-bhy"/>
+                            <constraint firstItem="kzm-qR-ms8" firstAttribute="trailing" secondItem="dha-hD-kBc" secondAttribute="trailing" id="ahq-PO-x8b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a2U-uE-7xk" secondAttribute="trailing" constant="14" id="d8y-Hy-2Xg"/>
+                            <constraint firstItem="a2U-uE-7xk" firstAttribute="leading" secondItem="NMr-lq-7af" secondAttribute="trailing" constant="8" symbolic="YES" id="dY3-x4-Fzd"/>
+                            <constraint firstItem="kzm-qR-ms8" firstAttribute="leading" secondItem="dha-hD-kBc" secondAttribute="leading" id="eTS-5E-Uvf"/>
+                            <constraint firstItem="NMr-lq-7af" firstAttribute="top" secondItem="kzm-qR-ms8" secondAttribute="bottom" constant="45" id="ety-4N-ziL"/>
+                            <constraint firstItem="jw1-sW-df7" firstAttribute="top" secondItem="dha-hD-kBc" secondAttribute="bottom" constant="26" id="ifG-p5-XhY"/>
+                            <constraint firstItem="fY1-HP-wQZ" firstAttribute="top" secondItem="jw1-sW-df7" secondAttribute="bottom" constant="42" id="seH-rA-Mfs"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="添加记录" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="2W3-XN-dNO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="now_datepicker" destination="jw1-sW-df7" id="TRg-80-wW0"/>
                         <outlet property="quantity_textfield" destination="a2U-uE-7xk" id="hMe-pM-0XH"/>
@@ -90,17 +118,43 @@
         <!--By Day-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController title="By Day" id="8rJ-Kc-sve" sceneMemberID="viewController">
+                <viewController title="By Day" id="8rJ-Kc-sve" customClass="RecordByDayViewController" customModule="Baby_Feeding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                        <viewControllerLayoutGuide type="top" id="0up-ia-rg5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vg1-MM-6wS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VLD-ie-erd">
+                                <rect key="frame" x="0.0" y="72" width="375" height="546"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pb3-b8-FoU">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="日统计" id="GM6-zj-2ue"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pb3-b8-FoU" firstAttribute="trailing" secondItem="VLD-ie-erd" secondAttribute="trailing" id="1GC-Mn-ZGh"/>
+                            <constraint firstItem="Pb3-b8-FoU" firstAttribute="leading" secondItem="VLD-ie-erd" secondAttribute="leading" id="1Gd-FV-bdK"/>
+                            <constraint firstItem="VLD-ie-erd" firstAttribute="top" secondItem="Pb3-b8-FoU" secondAttribute="bottom" id="4l4-zJ-jwo"/>
+                            <constraint firstItem="Vg1-MM-6wS" firstAttribute="top" secondItem="VLD-ie-erd" secondAttribute="bottom" id="GHP-G2-Gq9"/>
+                            <constraint firstAttribute="trailing" secondItem="Pb3-b8-FoU" secondAttribute="trailing" id="RUw-rN-VJB"/>
+                            <constraint firstItem="Pb3-b8-FoU" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Ukm-Wk-qgZ"/>
+                            <constraint firstItem="Pb3-b8-FoU" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="28" id="bU4-ug-acb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="日统计" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="record_Tableview" destination="VLD-ie-erd" id="HzR-5T-nxf"/>
+                        <outlet property="record_tableview" destination="VLD-ie-erd" id="eap-bD-69w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,41 +182,47 @@
             <objects>
                 <viewController title="Feeding Record" id="8Ud-n7-at4" customClass="RecordHistoryViewController" customModule="Baby_Feeding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="39H-v7-xgJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="1xe-NQ-lNR"/>
+                        <viewControllerLayoutGuide type="top" id="h5O-mg-oni"/>
+                        <viewControllerLayoutGuide type="bottom" id="D7V-E4-1tw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eVj-Do-HER">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7s-Bx-CzY">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7s-Bx-CzY">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="历史记录" id="hTv-Ne-C1t">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Idw-lT-LGj"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Yy-aR-4wl">
-                                <rect key="frame" x="0.0" y="64" width="328" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lvv-MC-UGj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q7s-Bx-CzY" firstAttribute="leading" secondItem="eVj-Do-HER" secondAttribute="leading" id="BaR-eH-6DM"/>
+                            <constraint firstItem="Lvv-MC-UGj" firstAttribute="bottom" secondItem="D7V-E4-1tw" secondAttribute="top" id="LJe-6v-gxT"/>
+                            <constraint firstAttribute="trailing" secondItem="q7s-Bx-CzY" secondAttribute="trailing" id="RC4-QF-oIa"/>
+                            <constraint firstItem="q7s-Bx-CzY" firstAttribute="leading" secondItem="Lvv-MC-UGj" secondAttribute="leading" id="RIJ-DB-jCK"/>
+                            <constraint firstItem="Lvv-MC-UGj" firstAttribute="top" secondItem="h5O-mg-oni" secondAttribute="bottom" id="jDq-9a-BS8"/>
+                            <constraint firstItem="Lvv-MC-UGj" firstAttribute="top" secondItem="q7s-Bx-CzY" secondAttribute="bottom" id="nYy-A0-zVF"/>
+                            <constraint firstItem="q7s-Bx-CzY" firstAttribute="trailing" secondItem="Lvv-MC-UGj" secondAttribute="trailing" id="vOI-Yw-RNV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="历史记录" image="first" id="6sr-aE-Fbl"/>
                     <navigationItem key="navigationItem" title="历史记录" id="mmu-ep-9Ad">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CHL-TG-ZeP">
                             <connections>
-                                <segue destination="9pv-A4-QxB" kind="showDetail" id="ZPl-dl-UrY"/>
+                                <segue destination="9pv-A4-QxB" kind="showDetail" id="38d-32-Wa2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="history_TableView" destination="3Yy-aR-4wl" id="RO1-NV-Nsz"/>
+                        <outlet property="history_TableView" destination="Lvv-MC-UGj" id="i1w-kv-9dt"/>
                         <segue destination="9ss-Tm-Gp3" kind="show" identifier="goto_edit_record" id="Lyj-CP-9yg"/>
                     </connections>
                 </viewController>
@@ -175,8 +235,8 @@
             <objects>
                 <viewController title="By Hours" id="6xc-0P-ic2" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="29h-aL-5f2"/>
-                        <viewControllerLayoutGuide type="bottom" id="Gff-p4-7KT"/>
+                        <viewControllerLayoutGuide type="top" id="6Ke-0i-b7m"/>
+                        <viewControllerLayoutGuide type="bottom" id="hEX-8P-74v"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="s6A-tu-x4X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -214,44 +274,50 @@
             <objects>
                 <viewController title="修改记录" id="9ss-Tm-Gp3" customClass="EditRecordViewController" customModule="Baby_Feeding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ibD-Ph-vux"/>
-                        <viewControllerLayoutGuide type="bottom" id="E8I-zw-Yul"/>
+                        <viewControllerLayoutGuide type="top" id="dws-bV-l5g"/>
+                        <viewControllerLayoutGuide type="bottom" id="xBx-gq-4d3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LOa-8w-Lka">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lMQ-Uo-ayB">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lMQ-Uo-ayB">
                                 <rect key="frame" x="0.0" y="259" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="553709212.84386206">
                                     <!--2018-07-19 16:06:52 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="时间" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-GZ-7PP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-GZ-7PP">
                                 <rect key="frame" x="0.0" y="196" width="375" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="DMh-Ap-A5f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="奶量(ml)" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxh-kV-0ld">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奶量(ml)" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxh-kV-0ld">
                                 <rect key="frame" x="29" y="109" width="124" height="40"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="H0k-xd-VA1"/>
+                                    <constraint firstAttribute="height" constant="40" id="oOi-nD-35S"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cF1-vU-VhM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cF1-vU-VhM">
                                 <rect key="frame" x="161" y="109" width="184" height="40"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZF-ry-vwQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZF-ry-vwQ">
                                 <rect key="frame" x="131" y="517" width="112" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Cke-fy-hLE"/>
+                                    <constraint firstAttribute="width" constant="112" id="I9i-3Q-550"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="完成"/>
                                 <connections>
@@ -260,8 +326,25 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cF1-vU-VhM" firstAttribute="leading" secondItem="cxh-kV-0ld" secondAttribute="trailing" constant="8" symbolic="YES" id="0k4-Xf-hHX"/>
+                            <constraint firstItem="cxh-kV-0ld" firstAttribute="top" secondItem="dws-bV-l5g" secondAttribute="bottom" constant="45" id="1tc-6I-JJY"/>
+                            <constraint firstItem="SSN-GZ-7PP" firstAttribute="leading" secondItem="LOa-8w-Lka" secondAttribute="leading" id="7vW-FB-ZSk"/>
+                            <constraint firstItem="cxh-kV-0ld" firstAttribute="top" secondItem="cF1-vU-VhM" secondAttribute="top" id="BcN-MG-zN3"/>
+                            <constraint firstItem="lMQ-Uo-ayB" firstAttribute="centerX" secondItem="TZF-ry-vwQ" secondAttribute="centerX" id="FNg-gk-x4D"/>
+                            <constraint firstItem="lMQ-Uo-ayB" firstAttribute="top" secondItem="SSN-GZ-7PP" secondAttribute="bottom" constant="26" id="Gim-ar-9aK"/>
+                            <constraint firstItem="SSN-GZ-7PP" firstAttribute="leading" secondItem="lMQ-Uo-ayB" secondAttribute="leading" id="OWM-SS-Iww"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cF1-vU-VhM" secondAttribute="trailing" constant="14" id="Q97-SS-Q3j"/>
+                            <constraint firstItem="SSN-GZ-7PP" firstAttribute="top" secondItem="cxh-kV-0ld" secondAttribute="bottom" constant="47" id="SdI-d8-PWg"/>
+                            <constraint firstItem="TZF-ry-vwQ" firstAttribute="top" secondItem="lMQ-Uo-ayB" secondAttribute="bottom" constant="42" id="WpE-xX-X7Z"/>
+                            <constraint firstItem="cxh-kV-0ld" firstAttribute="leading" secondItem="LOa-8w-Lka" secondAttribute="leadingMargin" constant="13" id="fu8-Ga-8ye"/>
+                            <constraint firstItem="SSN-GZ-7PP" firstAttribute="trailing" secondItem="lMQ-Uo-ayB" secondAttribute="trailing" id="hhu-gQ-ZXc"/>
+                            <constraint firstAttribute="trailing" secondItem="SSN-GZ-7PP" secondAttribute="trailing" id="lag-b6-5bt"/>
+                            <constraint firstItem="cxh-kV-0ld" firstAttribute="bottom" secondItem="cF1-vU-VhM" secondAttribute="bottom" id="rWX-3f-Kga"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="添加记录" image="first" id="Fg6-v3-iCe"/>
+                    <navigationItem key="navigationItem" id="GUe-fc-904"/>
                     <connections>
                         <outlet property="quantity_textfield" destination="cF1-vU-VhM" id="txw-Wc-9ml"/>
                         <outlet property="selected_datepicker" destination="lMQ-Uo-ayB" id="wHP-v3-7Fy"/>

@@ -10,6 +10,7 @@
 		C94B8AB921022CD4009B86B3 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94B8AB821022CD4009B86B3 /* AddRecordViewController.swift */; };
 		C95FB25621034AE1005BF70B /* FeedDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95FB25521034AE1005BF70B /* FeedDataCenter.swift */; };
 		C95FB2592104D972005BF70B /* EditRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95FB2582104D971005BF70B /* EditRecordViewController.swift */; };
+		C9ACEAE8210D7DB200F726AC /* RecordByDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACEAE7210D7DB200F726AC /* RecordByDayViewController.swift */; };
 		C9AE8E6B2102FCC100F9A43E /* RecordHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE8E6A2102FCC100F9A43E /* RecordHistoryViewController.swift */; };
 		C9C465BB2100CD8500DB346C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C465BA2100CD8500DB346C /* AppDelegate.swift */; };
 		C9C465C22100CD8500DB346C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C465C02100CD8500DB346C /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		C95FB25521034AE1005BF70B /* FeedDataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDataCenter.swift; sourceTree = "<group>"; };
 		C95FB25721048081005BF70B /* Baby Feeding.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Baby Feeding.entitlements"; sourceTree = "<group>"; };
 		C95FB2582104D971005BF70B /* EditRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditRecordViewController.swift; sourceTree = "<group>"; };
+		C9ACEAE7210D7DB200F726AC /* RecordByDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordByDayViewController.swift; sourceTree = "<group>"; };
 		C9AE8E6A2102FCC100F9A43E /* RecordHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordHistoryViewController.swift; sourceTree = "<group>"; };
 		C9C465B72100CD8500DB346C /* Baby Feeding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Feeding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C465BA2100CD8500DB346C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				C95FB2582104D971005BF70B /* EditRecordViewController.swift */,
 				C9AE8E6A2102FCC100F9A43E /* RecordHistoryViewController.swift */,
 				C95FB25521034AE1005BF70B /* FeedDataCenter.swift */,
+				C9ACEAE7210D7DB200F726AC /* RecordByDayViewController.swift */,
 			);
 			path = "Baby Feeding";
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9AE8E6B2102FCC100F9A43E /* RecordHistoryViewController.swift in Sources */,
+				C9ACEAE8210D7DB200F726AC /* RecordByDayViewController.swift in Sources */,
 				C9C465BB2100CD8500DB346C /* AppDelegate.swift in Sources */,
 				C95FB2592104D972005BF70B /* EditRecordViewController.swift in Sources */,
 				C95FB25621034AE1005BF70B /* FeedDataCenter.swift in Sources */,
