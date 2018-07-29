@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="17G65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="17G65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jxk-Ru-NrK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -113,52 +115,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <exit id="8Ft-Di-lrU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="440.80000000000001" y="-1014.2428785607198"/>
-        </scene>
-        <!--By Day-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController title="By Day" id="8rJ-Kc-sve" customClass="RecordByDayViewController" customModule="Baby_Feeding" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0up-ia-rg5"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vg1-MM-6wS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VLD-ie-erd">
-                                <rect key="frame" x="0.0" y="72" width="375" height="546"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <navigationBar opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pb3-b8-FoU">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="日统计" id="GM6-zj-2ue"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Pb3-b8-FoU" firstAttribute="trailing" secondItem="VLD-ie-erd" secondAttribute="trailing" id="1GC-Mn-ZGh"/>
-                            <constraint firstItem="Pb3-b8-FoU" firstAttribute="leading" secondItem="VLD-ie-erd" secondAttribute="leading" id="1Gd-FV-bdK"/>
-                            <constraint firstItem="VLD-ie-erd" firstAttribute="top" secondItem="Pb3-b8-FoU" secondAttribute="bottom" id="4l4-zJ-jwo"/>
-                            <constraint firstItem="Vg1-MM-6wS" firstAttribute="top" secondItem="VLD-ie-erd" secondAttribute="bottom" id="GHP-G2-Gq9"/>
-                            <constraint firstAttribute="trailing" secondItem="Pb3-b8-FoU" secondAttribute="trailing" id="RUw-rN-VJB"/>
-                            <constraint firstItem="Pb3-b8-FoU" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Ukm-Wk-qgZ"/>
-                            <constraint firstItem="Pb3-b8-FoU" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="28" id="bU4-ug-acb"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="日统计" image="second" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="record_Tableview" destination="VLD-ie-erd" id="HzR-5T-nxf"/>
-                        <outlet property="record_tableview" destination="VLD-ie-erd" id="eap-bD-69w"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1295.2" y="56.221889055472268"/>
+            <point key="canvasLocation" x="441" y="-1663"/>
         </scene>
         <!--历史记录-->
         <scene sceneID="beC-ug-DEr">
@@ -198,19 +155,49 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lvv-MC-UGj">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="545"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1t-PX-YyR">
+                                <rect key="frame" x="188" y="617" width="187" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="LNO-33-xK1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="分时统计"/>
+                                <connections>
+                                    <segue destination="M7X-BM-fAW" kind="show" identifier="goto_record_by_hour" id="oSf-s8-bVI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHB-nP-N4T">
+                                <rect key="frame" x="0.0" y="617" width="188" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wn7-kv-8MB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="日统计"/>
+                                <connections>
+                                    <segue destination="Fmf-z5-ons" kind="show" identifier="goto_record_by_day" id="BxZ-l4-czR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="q7s-Bx-CzY" firstAttribute="leading" secondItem="eVj-Do-HER" secondAttribute="leading" id="BaR-eH-6DM"/>
-                            <constraint firstItem="Lvv-MC-UGj" firstAttribute="bottom" secondItem="D7V-E4-1tw" secondAttribute="top" id="LJe-6v-gxT"/>
-                            <constraint firstAttribute="trailing" secondItem="q7s-Bx-CzY" secondAttribute="trailing" id="RC4-QF-oIa"/>
-                            <constraint firstItem="q7s-Bx-CzY" firstAttribute="leading" secondItem="Lvv-MC-UGj" secondAttribute="leading" id="RIJ-DB-jCK"/>
-                            <constraint firstItem="Lvv-MC-UGj" firstAttribute="top" secondItem="h5O-mg-oni" secondAttribute="bottom" id="jDq-9a-BS8"/>
-                            <constraint firstItem="Lvv-MC-UGj" firstAttribute="top" secondItem="q7s-Bx-CzY" secondAttribute="bottom" id="nYy-A0-zVF"/>
-                            <constraint firstItem="q7s-Bx-CzY" firstAttribute="trailing" secondItem="Lvv-MC-UGj" secondAttribute="trailing" id="vOI-Yw-RNV"/>
+                            <constraint firstItem="uHB-nP-N4T" firstAttribute="firstBaseline" secondItem="J1t-PX-YyR" secondAttribute="baseline" id="0of-vV-MdZ"/>
+                            <constraint firstItem="uHB-nP-N4T" firstAttribute="top" secondItem="J1t-PX-YyR" secondAttribute="top" id="5UY-BB-hYO"/>
+                            <constraint firstItem="uHB-nP-N4T" firstAttribute="baseline" secondItem="J1t-PX-YyR" secondAttribute="firstBaseline" id="6bK-WS-HDx"/>
+                            <constraint firstItem="uHB-nP-N4T" firstAttribute="leading" secondItem="Lvv-MC-UGj" secondAttribute="leading" id="7fh-Tv-hC4"/>
+                            <constraint firstItem="Lvv-MC-UGj" firstAttribute="trailing" secondItem="J1t-PX-YyR" secondAttribute="trailing" id="A42-u0-DDE"/>
+                            <constraint firstItem="J1t-PX-YyR" firstAttribute="leading" secondItem="uHB-nP-N4T" secondAttribute="trailing" id="CeS-HB-Ryq"/>
+                            <constraint firstItem="q7s-Bx-CzY" firstAttribute="leading" secondItem="eVj-Do-HER" secondAttribute="leading" id="Lxw-lP-20o"/>
+                            <constraint firstItem="q7s-Bx-CzY" firstAttribute="leading" secondItem="Lvv-MC-UGj" secondAttribute="leading" id="M8N-dn-hG7"/>
+                            <constraint firstItem="uHB-nP-N4T" firstAttribute="top" secondItem="Lvv-MC-UGj" secondAttribute="bottom" constant="8" symbolic="YES" id="MOg-bE-vdh"/>
+                            <constraint firstItem="Lvv-MC-UGj" firstAttribute="top" secondItem="q7s-Bx-CzY" secondAttribute="bottom" id="NRh-32-rCL"/>
+                            <constraint firstItem="uHB-nP-N4T" firstAttribute="bottom" secondItem="D7V-E4-1tw" secondAttribute="top" id="ado-FX-RJF"/>
+                            <constraint firstItem="q7s-Bx-CzY" firstAttribute="trailing" secondItem="Lvv-MC-UGj" secondAttribute="trailing" id="jZS-jJ-9S5"/>
+                            <constraint firstItem="Lvv-MC-UGj" firstAttribute="top" secondItem="h5O-mg-oni" secondAttribute="bottom" id="p0H-Uy-AUq"/>
+                            <constraint firstAttribute="trailing" secondItem="q7s-Bx-CzY" secondAttribute="trailing" id="u3T-8m-FAa"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="历史记录" image="first" id="6sr-aE-Fbl"/>
@@ -229,45 +216,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Tb-Vc-2L4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-407.19999999999999" y="-631.0344827586207"/>
-        </scene>
-        <!--By Hours-->
-        <scene sceneID="7gp-DD-ckA">
-            <objects>
-                <viewController title="By Hours" id="6xc-0P-ic2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6Ke-0i-b7m"/>
-                        <viewControllerLayoutGuide type="bottom" id="hEX-8P-74v"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="s6A-tu-x4X">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="小时统计 " image="second" id="Hni-C9-oTi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lN9-IM-fxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1295" y="761"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="yl2-sM-qoP">
-            <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="jxk-Ru-NrK" kind="relationship" relationship="viewControllers" id="HIk-4M-rDJ"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="xDd-w8-vRb"/>
-                        <segue destination="6xc-0P-ic2" kind="relationship" relationship="viewControllers" id="vRf-mT-bvT"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2143" y="57"/>
         </scene>
         <!--修改记录-->
         <scene sceneID="jME-pj-rh5">
@@ -343,8 +291,8 @@
                             <constraint firstItem="cxh-kV-0ld" firstAttribute="bottom" secondItem="cF1-vU-VhM" secondAttribute="bottom" id="rWX-3f-Kga"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="添加记录" image="first" id="Fg6-v3-iCe"/>
-                    <navigationItem key="navigationItem" id="GUe-fc-904"/>
+                    <tabBarItem key="tabBarItem" title="修改记录" image="first" id="Fg6-v3-iCe"/>
+                    <navigationItem key="navigationItem" title="修改记录" id="GUe-fc-904"/>
                     <connections>
                         <outlet property="quantity_textfield" destination="cF1-vU-VhM" id="txw-Wc-9ml"/>
                         <outlet property="selected_datepicker" destination="lMQ-Uo-ayB" id="wHP-v3-7Fy"/>
@@ -354,11 +302,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhO-JD-npo" sceneMemberID="firstResponder"/>
                 <exit id="FQ7-gU-VDn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="440.80000000000001" y="-215.44227886056973"/>
+            <point key="canvasLocation" x="441" y="-966"/>
+        </scene>
+        <!--日统计-->
+        <scene sceneID="Whe-Eu-xxu">
+            <objects>
+                <viewController title="日统计" id="Fmf-z5-ons" customClass="RecordByDayViewController" customModule="Baby_Feeding" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mgt-1D-2Ad"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ba-nL-rA0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NKR-Gs-2Py">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5fP-9d-CYk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5fP-9d-CYk" firstAttribute="leading" secondItem="NKR-Gs-2Py" secondAttribute="leading" id="4Fc-e0-xW9"/>
+                            <constraint firstItem="5fP-9d-CYk" firstAttribute="top" secondItem="mgt-1D-2Ad" secondAttribute="bottom" id="B4x-gg-1Zi"/>
+                            <constraint firstItem="5fP-9d-CYk" firstAttribute="bottom" secondItem="5ba-nL-rA0" secondAttribute="top" id="Z2B-YM-pNd"/>
+                            <constraint firstAttribute="trailing" secondItem="5fP-9d-CYk" secondAttribute="trailing" id="mkt-NY-kg2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="history_TableView" destination="5fP-9d-CYk" id="MsK-dt-tNN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDG-dR-teX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440.80000000000001" y="-277.51124437781112"/>
+        </scene>
+        <!--分时统计-->
+        <scene sceneID="d5d-Xk-wpb">
+            <objects>
+                <viewController title="分时统计" id="M7X-BM-fAW" customClass="RecordByHourViewController" customModule="Baby_Feeding" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nhu-JA-6Pc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ILV-9Q-6B3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Ng-6z-5kn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5D-2P-bgw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a5D-2P-bgw" secondAttribute="trailing" id="GSM-c8-f5r"/>
+                            <constraint firstItem="a5D-2P-bgw" firstAttribute="leading" secondItem="9Ng-6z-5kn" secondAttribute="leading" id="Oh4-zH-pVG"/>
+                            <constraint firstItem="a5D-2P-bgw" firstAttribute="bottom" secondItem="ILV-9Q-6B3" secondAttribute="top" id="fgE-Gt-pZ8"/>
+                            <constraint firstItem="a5D-2P-bgw" firstAttribute="top" secondItem="Nhu-JA-6Pc" secondAttribute="bottom" id="iB2-j4-ae8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="history_TableView" destination="a5D-2P-bgw" id="wyF-69-Ffl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqp-9l-bsR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="410"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
 </document>

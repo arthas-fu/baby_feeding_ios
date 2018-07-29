@@ -1,5 +1,5 @@
 //
-//  RecordHistoryViewController
+//  RecordHistoryViewController.swift
 //  Baby Feeding
 //
 //  Created by ArthasFu on 2018/7/19.
@@ -32,9 +32,18 @@ class RecordHistoryViewController:  UIViewController, UITableViewDelegate, UITab
             let destination = segue.destination as! EditRecordViewController
             destination.edit_data = self.get_selected_data()
             
-        }
-    }
+        } else if segue.identifier == "goto_record_by_day"{
+            let destination = segue.destination as! RecordByDayViewController
+            destination.feed_data = self.feed_data.get_record_by_day()
+            
+        } else if segue.identifier == "goto_record_by_hour"{
+            let destination = segue.destination as! RecordByHourViewController
+            destination.feed_data = self.feed_data.get_record_by_hour()
     
+        }
+    
+    }
+
     @IBAction func record_done(segue: UIStoryboardSegue){
         if segue.identifier == "add_record_done"{
             let data = segue.source as! AddRecordViewController
