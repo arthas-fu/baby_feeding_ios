@@ -56,11 +56,14 @@ class FeedDataCenter{
         let readHandler = FileHandle(forReadingAtPath: self.filePath)
         let data = readHandler?.readDataToEndOfFile()
         let readString = String(data: data!, encoding: String.Encoding.utf8)
-        var subStr = readString?.components(separatedBy: ",")
-        subStr?.removeLast()
+        let subStr = readString?.components(separatedBy: ",")
+        //subStr?.removeLast()
         
         for element in subStr!{
             let subElement = element.components(separatedBy: " ")
+            if(3 != subElement.count){
+                continue
+            }
             self.feed_data_array.append((subElement[0], subElement[1], Int(subElement[2])!))
         }
         
@@ -148,7 +151,10 @@ class FeedDataCenter{
     
     
     func get_record_by_hour() -> (Array<(String, String, Int, Int)>){
-        self.record_by_day_array.removeAll()
+        for i in 0..<self.record_by_hour_array.count{
+            self.record_by_hour_array[i].2 = 0
+            self.record_by_hour_array[i].3 = 0
+        }
         
         for element in self.feed_data_array{
             var subStr = element.1.components(separatedBy: ":")
