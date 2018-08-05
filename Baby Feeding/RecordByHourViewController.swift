@@ -40,14 +40,14 @@ class RecordByHourViewController:  UIViewController, UITableViewDelegate, UITabl
         
         cell.textLabel?.text = (cell_data?.0)! + " - " + (cell_data?.1)!
         
-        var average = 0.0;
+        var average = 0;
         if 0 == cell_data?.3{
             average = 0
         } else {
-            average = Double((cell_data?.2)! / (cell_data?.3)!)
+            average = (cell_data?.2)! / (cell_data?.3)!
         }
         
-        cell.detailTextLabel?.text = "平均 \(average)" + " ml"
+        cell.detailTextLabel?.text = "共 \(cell_data?.3 ?? 0) 次，平均 \(average)" + " ml"
         
         return cell
     }

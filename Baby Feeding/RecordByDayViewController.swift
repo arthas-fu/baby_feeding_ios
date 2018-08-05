@@ -10,7 +10,7 @@ import UIKit
 
 class RecordByDayViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var feed_data:Array<(String, Int)>? = nil
+    var feed_data:Array<(String, Int, Int)>? = nil
     
     @IBOutlet weak var history_TableView: UITableView!
     override func viewDidLoad() {
@@ -39,7 +39,7 @@ class RecordByDayViewController:  UIViewController, UITableViewDelegate, UITable
         let cell_data = self.feed_data?[indexPath.row]
         
         cell.textLabel?.text = cell_data?.0
-        cell.detailTextLabel?.text = "共 \(cell_data?.1 ?? 0)" + " ml"
+        cell.detailTextLabel?.text = "共 \(cell_data?.2 ?? 0) 次 \(cell_data?.1 ?? 0)" + " ml"
         
         return cell
     }

@@ -11,7 +11,7 @@ import UIKit
 class FeedDataCenter{
     
     private var feed_data_array = Array<(String, String ,Int)>()
-    private var record_by_day_array = Array<(String, Int)>()
+    private var record_by_day_array = Array<(String, Int, Int)>()
     private var record_by_hour_array: Array<(String, String, Int, Int)> = [
         ("00:00", "01:00", 0, 0),
         ("01:00", "02:00", 0, 0),
@@ -128,7 +128,7 @@ class FeedDataCenter{
         writeHandler?.closeFile()
     }
     
-    func get_record_by_day() -> (Array<(String, Int)>){
+    func get_record_by_day() -> (Array<(String, Int, Int)>){
         self.record_by_day_array.removeAll()
         
         for element in self.feed_data_array{
@@ -136,13 +136,15 @@ class FeedDataCenter{
             for (i, var item) in self.record_by_day_array.enumerated(){
                 if item.0 == element.0{
                     item.1 += element.2
+                    item.2 += 1
                     found = true
                     self.record_by_day_array[i].1 = item.1
+                    self.record_by_day_array[i].2 = item.2
                     break;
                 }
             }
             if(false == found){
-                self.record_by_day_array.append((element.0, element.2))
+                self.record_by_day_array.append((element.0, element.2, 1))
             }
         }
         
